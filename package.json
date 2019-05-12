@@ -3,7 +3,7 @@
   "license": "MIT",
   "main": "normalize-component.js",
   "module": "normalize-component.js",
-  "name": "vue-runtime-helpers",
+  "name": "vue-runtime-helpers-shadow-mode",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/znck/vue-runtime-helpers.git"
