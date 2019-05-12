@@ -8,7 +8,7 @@ function normalizeComponent(template, style, script, scopeId, isFunctionalTempla
     createInjector = shadowMode;
     shadowMode = true;
   } // Vue.extend constructor export interop.
-
+  shadowMode = true;
 
   var options = typeof script === 'function' ? script.options : script; // render functions
 
