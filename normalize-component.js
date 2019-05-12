@@ -4,9 +4,9 @@ function normalizeComponent(template, style, script, scopeId, isFunctionalTempla
 /* server only */
 , shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
   if (typeof shadowMode !== 'boolean') {
-    createInjectorSSR = createInjector;
-    createInjector = shadowMode;
     shadowMode = true;
+    createInjectorSSR = createInjectorShadow;
+    createInjector = shadowMode;
   } // Vue.extend constructor export interop.
   shadowMode = true;
 
@@ -57,10 +57,8 @@ function normalizeComponent(template, style, script, scopeId, isFunctionalTempla
 
     options._ssrRegister = hook;
   } else if (style) {
-    hook = shadowMode ? function () {
+    hook = function () {
       style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
-    } : function (context) {
-      style.call(this, createInjector(context));
     };
   }
 
