@@ -1,0 +1,12 @@
+{
+  "homepage": "https://github.com/FabianTerhorst/vue-runtime-helpers",
+  "license": "MIT",
+  "main": "normalize-component.js",
+  "module": "normalize-component.js",
+  "name": "vue-runtime-helpers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znck/vue-runtime-helpers.git"
+  },
+  "version": "1.0.0"
+}
